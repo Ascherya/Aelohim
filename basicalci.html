@@ -1,21 +1,24 @@
 <html>
 <head>
 <script language="javascript">
-var n1=parseInt(window.prompt("Enter first number"));
-var n2=parseInt(window.prompt("Enter Second  number"));
-
-var r1=n1+n2;
-var r2=n1-n2;
-var r3=n1*n2;
-var r4=n1/n2;
-
-window.alert("Addition:"+r1);
-window.alert("Subtraction:"+r2);
-window.alert("Multiplication:"+r3);
-window.alert("Division:"+r4);
-
-</script>
-</head>
-<body>
-</body>
-</html>
+function change(col)
+{
+switch(col)
+{
+case 'red':document.bgColor="red";
+                   break;
+                   
+ case 'green':document.bgColor="green";
+                   break;
+ case 'blue':document.bgColor="blue";
+                   break;
+  }
+ }
+ </script>
+ </head>
+ <body>
+ <h1><input type="radio" name="c" onClick="change('red')"> RED</h1>
+ <h1><input type="radio" name="c"  onClick="change('green')"> GREEN</h1>
+ <h1><input type="radio" name="c" onClick="change('blue')"> BLUE<h1>
+ </body>
+ </html>
